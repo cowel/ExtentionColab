@@ -9,6 +9,7 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     case "recv":
       sendResponse({ value: value });
       break;
+
   }
 
   return true;

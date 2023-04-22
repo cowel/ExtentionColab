@@ -10,7 +10,7 @@
     "https://colab.research.google.com/*"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "./js/background.js"
   },
   "action": {
     "default_title": "I am Chapter 8",
@@ -25,10 +25,10 @@
   "content_scripts": [
     {
       "js": [
-        "content.js"
+        "./js/content.js"
       ],
       "matches": [
-        "https://colab.research.google.com/*"
+        "<all_urls>"
       ]
     }
   ]
